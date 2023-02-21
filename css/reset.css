@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700;900&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: nanumson;
+  src: url(../font/nanumsongeulssi.ttf);
+}
+@font-face {
+  font-family: rose;
+  src: url(../font/rose.ttf);
+}
+@font-face {
+  font-family: begain;
+  src: url(../font/begain.ttf);
+}
+@font-face {
+  font-family: sang;
+  src: url(../font/sanghai.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+html,body{
+ width: 100%;
+ height: 100vh;
+}
+img,video{
+  vertical-align: top;
+  max-width: 100%;
+
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.container{
+  width: 80%;
+  /* height: 100%; */
+  margin: 0 auto;
+}
