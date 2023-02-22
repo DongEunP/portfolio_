@@ -10,20 +10,20 @@ $(document).on('click', '.intro_img', function(){
 });
 
 // 메인비쥬얼 타이핑
-const $text = document.querySelector(".main_txt h2");
+let $text = document.querySelector(".main_txt h2");
 
 // 글자 모음
-const letters = [
+let letters = [
   "Park Dong Eun"
 ];
 
 // 글자 입력 속도
-const speed = 100;
+let speed = 100;
 let i = 0;
 
 // 타이핑 효과
-const typing = async () => {  
-  const letter = letters[i].split("");
+let typing = async () => {  
+  let letter = letters[i].split("");
   
   while (letter.length) {
     await wait(speed);
@@ -41,10 +41,10 @@ const typing = async () => {
 function wait(ms) {
   return new Promise(res => setTimeout(res, ms))
 }
-setTimeout(typing, 1500);
+setTimeout(typing, 500);
 
-const remove = async () => {
-  const letter = letters[i].split("");
+let remove = async () => {
+  let letter = letters[i].split("");
   
   while (letter.length) {
     await wait(speed);
@@ -62,6 +62,8 @@ const remove = async () => {
 function wait(ms) {
   return new Promise(res => setTimeout(res, ms))
 }
+
+
 
 
 
@@ -110,7 +112,7 @@ $win.scroll(function(){
       strokeWidth: 6,
       easing: 'easeInOut',
       duration: 1400,
-      color: '#FFEA82',
+      color: '#f6899c',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null
@@ -119,7 +121,7 @@ $win.scroll(function(){
       strokeWidth: 6,
       easing: 'easeInOut',
       duration: 1400,
-      color: '#FFEA82',
+      color: '#f6899c',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null
@@ -128,7 +130,7 @@ $win.scroll(function(){
       strokeWidth: 6,
       easing: 'easeInOut',
       duration: 1400,
-      color: '#FFEA82',
+      color: '#f6899c',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null
@@ -137,7 +139,7 @@ $win.scroll(function(){
       strokeWidth: 6,
       easing: 'easeInOut',
       duration: 1400,
-      color: '#FFEA82',
+      color: '#f6899c',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null
@@ -146,7 +148,7 @@ $win.scroll(function(){
       strokeWidth: 6,
       easing: 'easeInOut',
       duration: 1400,
-      color: '#FFEA82',
+      color: '#f6899c',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null
@@ -155,7 +157,7 @@ $win.scroll(function(){
       strokeWidth: 6,
       easing: 'easeInOut',
       duration: 1400,
-      color: '#FFEA82',
+      color: '#f6899c',
       trailColor: '#eee',
       trailWidth: 1,
       svgStyle: null
@@ -243,6 +245,62 @@ $win.scroll(function(){
         }
       }
     }
+
+    // sec02타이핑
+    // let $txt01 = document.querySelector(".html strong")
+    //      $txt02 = document.querySelector(".css strong")
+    //      $txt03 = document.querySelector(".js strong")
+    //      $txt04 = document.querySelector(".max b")
+    //      $txt05 = document.querySelector(".photo strong")
+    //      $txt06 = document.querySelector(".ill strong");
+
+    // // 글자 모음
+    // const letters01 = ["HTML5"]
+    //           letters02 = ["CSS3"]
+    //           letters03 = ["JAVAscript"]
+    //           letters04 = ["3DSmax"]
+    //           letters05 = ["PHOTOSHOP"]
+    //           letters06 = ["ILLUSTRATOR"];
+
+    // // 글자 입력 속도
+    // let speed = 100;
+    // let i = 0;
+
+    // // html
+    // let typing = async () => {  
+    //   var letter01 = letters01[i].split("")
+    //         letter02 = letters02[i].split("")
+    //         letter03 = letters03[i].split("")
+    //         letter04 = letters04[i].split("")
+    //         letter05 = letters05[i].split("")
+    //         letter06 = letters06[i].split("");
+      
+    //   while (letter01.length) {
+    //     await wait(speed);
+    //     $txt01.innerHTML += letter01.shift(); 
+    //   }
+    //   while (letter02.length) {
+    //     await wait(speed);
+    //     $txt02.innerHTML += letter02.shift(); 
+    //   }
+    //     while (letter03.length) {
+    //     await wait(speed);
+    //     $txt03.innerHTML += letter03.shift(); 
+    //   }
+    //     while (letter04.length) {
+    //     await wait(speed);
+    //     $txt04.innerHTML += letter04.shift(); 
+    //   }
+    //     while (letter05.length) {
+    //     await wait(speed);
+    //     $txt05.innerHTML += letter05.shift(); 
+    //   }
+    //     while (letter06.length) {
+    //     await wait(speed);
+    //     $txt06.innerHTML += letter06.shift(); 
+    //   }
+    // }
+    // setTimeout(typing, 1000);
 
 
     // 스킬 대제목
