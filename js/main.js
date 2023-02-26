@@ -422,6 +422,10 @@ $('.menu03').click(function(){
   $('html').animate({scrollTop:section03},500)
 })
 $('.menu04').click(function(){
+  var section04 = $('.sec04').offset().top;
+  $('html').animate({scrollTop:section04},500)
+})
+$('.menu05').click(function(){
   var section04 = $('footer').offset().top;
   $('html').animate({scrollTop:section04},500)
 })
