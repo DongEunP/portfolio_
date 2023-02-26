@@ -431,21 +431,19 @@ $('.pg_up').click(function(){
 })
 
 // sec03 클릭
-//  let btn01 = $('.port01 .port_btn')
-//  let port_inner = $('.port_inner')
-// $(function(){
-//   btn01.on("click", function(){
-//     port_inner.css({opacity:'1', zIndex:'100'})
-//     $('.port01_inner').css({opacity:'1',scale:'100%'})
-//     $('body').addClass('scrollLock')
-//     // $('.sec03').addClass('scrollLock')
-//   })
-//   $('.port_inner i').click(function(){
-//     port_inner.css({opacity:'0', zIndex:'-10'});
-//     $('.port01_inner').css({opacity:'0',scale:'0'})
-//     $('body').removeClass('scrollLock')
-//   })
-// })
+ let btn01 = $('.sec04_btn01')
+ let innerBg = $('.visual_inner')
+$(function(){
+  btn01.on("click", function(){
+    innerBg.css({opacity:'1', zIndex:'100'})
+    $('header,section,footer').removeClass('mousewheel')
+    $('script.mouse').remove()
+  })
+  $('.sec04_mv_close').click(function(){
+    innerBg.css({opacity:'0', zIndex:'-9999'})
+    $('header,section,footer').addClass('mousewheel')
+  })
+})
 
 
 // sec03 슬라이드
@@ -470,4 +468,22 @@ $(function(){
       prevEl: ".swiper-button-prev"
     },
   })
+  var swiper = new Swiper(".swiper1",{
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  })
+  var swiper = new Swiper(".swiper2", {
+    watchSlidesProgress: true,
+    slidesPerView: 5,
+  });
+})
+
+
+// sec04 메인비쥬얼 슬라이드
+$(function(){
+
 })

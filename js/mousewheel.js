@@ -35,7 +35,7 @@ window.onload = function(){
         }
       }
 
-      const body = document.querySelector('html');
+      const body = document.querySelector('body');
       window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
     });
   });
