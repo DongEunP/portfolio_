@@ -550,7 +550,7 @@ section h2{
   margin-left: 10%;
 }
 .sec04 .main_img{
-  height: 60%;
+  height: 55%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -558,16 +558,17 @@ section h2{
   width: 40%;
   height: 60%;
   border-radius: 20px;
-  margin-top: 18%;
+  margin-top: 13%;
 }
 .sec04 .main_img .visual{
-  background: url(../img/sec04_mv08.jpg) no-repeat;
+  background: url(../img/sec04_mv01.png) no-repeat;
   background-size: cover;
   justify-content: end;
   align-items: start;
 }
 .sec04 .main_img .visual:hover .etc_hover{
   opacity: 1;
+  transition: .5s;
 }
 .etc_hover{
   width: 100%;
@@ -575,7 +576,6 @@ section h2{
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: 1s;
 }
 .sec04 .main_img .etc_btn{
   display: grid;
@@ -585,7 +585,7 @@ section h2{
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding: 8%;
+  padding: 0 3% 2% 0;
 }
 .sec04 .main_img h3{
   font-size: 5vw;
@@ -606,33 +606,34 @@ section h2{
   margin: 0 auto;
 }
 .sec04 .main_img .leaflet{
-  background: url(../img/sec04_leaf03.jpg) no-repeat;
+  background: url(../img/sec04_leaf04.jpg) no-repeat;
   background-size: cover;
   background-position: -3px;
 }
 .sec04 .main_img .leaflet:hover .etc_hover{
   opacity: 1;
+  transition: .5s;
 }
 .banner{
   width: 100%;
-  height: 40%;
+  height: 45%;
   position: relative;
   bottom: 0;
   overflow: hidden;
 }
 .banner h3{
   position: absolute;
-  top: 10%;
+  top: 3%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.5vw;
+  z-index: 10;
 }
 .banner .banner_wrap{
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
 }
 .banner img{
-  width: 25%;
   padding-right: 10px;
 }
 
