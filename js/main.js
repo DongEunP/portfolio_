@@ -470,6 +470,7 @@ $(function(){
   })
   var swiper = new Swiper(".swiper1",{
     slidesPerView: 1,
+    spaceBetween: 30,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -479,6 +480,10 @@ $(function(){
   var swiper = new Swiper(".swiper2", {
     watchSlidesProgress: true,
     slidesPerView: 5,
+    loop: true,
+    autoplay: {
+      disableOnInteraction: false
+    },
   });
 })
 
