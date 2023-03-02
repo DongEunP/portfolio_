@@ -27,6 +27,9 @@ html,body{
  width: 100%;
  height: 100vh;
 }
+html{
+  overflow-y: hidden;
+}
 img,video{
   vertical-align: top;
   max-width: 100%;
@@ -34,6 +37,7 @@ img,video{
 }
 ul,li{
   list-style: none;
+  user-select:none;
 }
 a{
   text-decoration: none;

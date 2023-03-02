@@ -1,9 +1,10 @@
-@media (min-width:1281px) {
-  html{
-    overflow-y: hidden;
-  }
-}
 @media (max-width:1280px) {
+  .mv_click{
+    display: flex;
+  }
+  .scroll{
+    display: none;
+  }
   .sec01 .profile{
     flex-direction: column-reverse;
     justify-content: center;
@@ -208,7 +209,7 @@
 }
 @media (max-width:599px) {
   header .hbg li{
-    font-size: 0.825rem;
+    font-size: 10px;
   }
   header .main_vs video{
     object-fit: cover;
@@ -295,7 +296,7 @@
     padding: 0;
   }
   .banner h3{
-    top: 12%;
+    top: 5%;
   }
   .sec04 h2, .sec03 .sec03_wrap h2{
     margin-left: 5%;

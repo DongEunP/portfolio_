@@ -442,7 +442,6 @@ $(window).scroll(function(){
 // 메뉴 클릭시 섹션 이동
 $(document).on('click','.menu01',function(){
   var section01 = $('.sec01').offset().top;
-  console.log(section01)
   $('html, body').animate({scrollTop:section01},500)
 
 })
@@ -465,6 +464,10 @@ $('.menu05').click(function(){
 $('.pg_up').click(function(){
   var header = $('header').offset().top;
   $('html').animate({scrollTop:header},500)
+})
+$('.mv_click').click(function(){
+  var section01 = $('.sec01').offset().top;
+  $('html, body').animate({scrollTop:section01},500)
 })
 
 // sec03 클릭
