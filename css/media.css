@@ -139,7 +139,7 @@
   }
   header .main_vs .main_txt{
     width: 100%;
-    top: 10%;
+    top: 13%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -174,6 +174,9 @@
   }
   .swiper-button-next, .swiper-button-prev{
     display: none !important;
+  }
+  .sec01 .profile{
+    padding-bottom: 50px;
   }
   .sec01 .profile .tab_wrap{
     width: 100%;
@@ -245,7 +248,7 @@
   }
   .sec03 .sec03_wrap .port_wrap>div b{
     font-size: 40vw;
-    top: 15%;
+    top: 18%;
   }
   .sec03_wrap .port_hover .hover_txt dl dt{
     margin: 10px auto 0 auto;
@@ -260,7 +263,7 @@
     bottom: 25% !important;
   }
   .sec04 .main_img{
-    height: 35%;
+    height: 30%;
     justify-content: space-between;
   }
   .sec04 .main_img>div{
@@ -333,7 +336,7 @@
     width: 20%;
   }
   .foot .foot_img{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 @media (max-width:599px) {
