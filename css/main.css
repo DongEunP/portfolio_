@@ -302,6 +302,7 @@ section h2{
 /* sec02 */
 .sec02{
   height: 100%;
+  overflow: hidden;
 }
 .sec02_wrap{
   width: 100%;
