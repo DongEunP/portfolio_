@@ -364,6 +364,19 @@ $win.scroll(function(){
 
   };
 
+  // sec04
+  let sec04 = $('.sec04').offset().top;
+  let sec04h2 = $('.sec04 h2')
+
+  if ($win.scrollTop() >= sec04 ) {
+    // 스킬 대제목
+    sec04h2.css('animation','sec01 1s')
+    sec04h2.css('opacity','1')
+  }else{
+    sec04h2.css('animation','none')
+    sec04h2.css('opacity','0')
+  };
+
   // footer
   let footer = $('footer').offset().top;
   let footerH2 = $('footer h2')
@@ -385,7 +398,7 @@ $win.scroll(function(){
 });
 
 // 섹션 이동시 메뉴 색상 변경
-let $menu = $('.gnb li')
+let $menu = $('.outer li')
 $(window).scroll(function(){
   // each():제이쿼리 객체에 포함된 각 요소에 개별적인 작업 실행
 
@@ -400,6 +413,26 @@ $(window).scroll(function(){
       let index = $(this).index()-1;
       $menu.removeClass('on')
       $menu.eq(index).addClass('on');
+
+    }
+
+  })
+});
+let $menu01 = $('.inner li')
+$(window).scroll(function(){
+  // each():제이쿼리 객체에 포함된 각 요소에 개별적인 작업 실행
+
+  // $('선택자').each(function(){
+  //   $(this) 또는
+  //   $('선택자').eq(index) 또는
+  //   $('선택자:eq(index)')
+  // })
+  
+  $('.move').each(function(){
+    if($(this).offset().top <= $(window).scrollTop()){
+      let index = $(this).index()-1;
+      $menu01.removeClass('on')
+      $menu01.eq(index).addClass('on');
 
     }
 
@@ -456,7 +489,7 @@ $(function(){
   const progressContent = document.querySelector(".autoplay-progress span");
   var swiper = new Swiper(".swiper",{
     slidesPerView: 'auto',
-    spaceBetween: 100,
+    spaceBetween: 50,
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -467,10 +500,11 @@ $(function(){
       el: ".swiper-pagination",
       clickable: true
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
+    breakpoints:{
+      600:{
+        spaceBetween: 100,
+      }
+    }
   })
   var swiper = new Swiper(".swiper1",{
     slidesPerView: 1,
@@ -483,16 +517,40 @@ $(function(){
   })
   var swiper = new Swiper(".swiper2", {
     watchSlidesProgress: true,
-    slidesPerView: 5,
+    slidesPerView: 1,
     loop: true,
     autoplay: {
       disableOnInteraction: false
+    },
+    breakpoints:{
+      861:{
+        slidesPerView: 5,
+      },
+      601:{
+        slidesPerView: 3,
+      },
+      360:{
+        slidesPerView: 2,
+      }
     },
   });
 })
 
 
-// sec04 메인비쥬얼 슬라이드
-$(function(){
+//hbg 클릭
+// $('.hbg>div').click(function(){
+//   $('.inner').stop(true).slideToggle("slow")
+// })
+var burger = $('.menu-trigger');
 
-})
+burger.each(function(index){
+  var $this = $(this);
+  
+  $this.on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active-11');
+    timer = setTimeout(function(){
+      $('.inner').stop(true).slideToggle('slow');
+    },1000)
+  })
+});
