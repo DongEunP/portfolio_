@@ -1,3 +1,8 @@
+@media (min-width:1281px) {
+  html{
+    overflow-y: hidden;
+  }
+}
 @media (max-width:1280px) {
   .sec01 .profile{
     flex-direction: column-reverse;
@@ -207,8 +212,10 @@
     object-position: 66% ;
   }
   header .main_vs .main_txt{
+    width: 100%;
     top: 10%;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
     text-align: center;
   }
