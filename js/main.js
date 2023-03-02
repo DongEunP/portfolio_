@@ -465,6 +465,10 @@ $('.pg_up').click(function(){
   var header = $('header').offset().top;
   $('html').animate({scrollTop:header},500)
 })
+$('.hbg h1').click(function(){
+  var header = $('header').offset().top;
+  $('html').animate({scrollTop:header},500)
+})
 $('.mv_click').click(function(){
   var section01 = $('.sec01').offset().top;
   $('html, body').animate({scrollTop:section01},500)

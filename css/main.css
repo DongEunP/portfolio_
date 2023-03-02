@@ -41,7 +41,7 @@
 header{
   height: 100vh;
 }
-header h1{
+header>a h1{
   width: 100px;
   height: 60px;
   text-align: center;
@@ -112,6 +112,9 @@ header .pg_up{
 header .pg_up i{
   font-size: 2vw;
   transform: translateY(25%);
+}
+header .mo{
+  display: none;
 }
 
 

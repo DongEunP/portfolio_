@@ -5,6 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>rlo_oLn</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -29,6 +46,7 @@
         <li class="menu05">CONTACT</li>
       </ul>
       <div class="hbg">
+        <h1><img src="img/logo.png" alt=""></h1>
         <ul class="gnb inner">
           <li class="menu01 on"><i class="fa-regular fa-address-card"></i></li>
           <li class="menu02"><i class="fa-solid fa-chart-simple"></i></li>
@@ -55,8 +73,11 @@
         <i class="fa-solid fa-caret-down"></i>
       </div>
     </div>
-    <div class="pg_up">
+    <div class="pg_up pc">
       <i class="fa-solid fa-caret-up"></i>
+    </div>
+    <div class="pg_up mo">
+      <a href="index.html"><i class="fa-solid fa-reply"></i></a>
     </div>
   </header>
   <!-- //헤더/메인비쥬얼 -->
@@ -452,7 +473,7 @@
                 <input type="text" name="subject" id="con_sub" title="SUBJECT" placeholder="제목" required>
               </li>
               <li>
-                <label for="con_message"></label>
+                <label for="con_message">MESSAGE</label>
                 <textarea id="con_message" name="message" title="MESSAGE" rows="10" placeholder="보내실 내용을 입력해주세요." required></textarea>
               </li>
             </ul>

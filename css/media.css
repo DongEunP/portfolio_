@@ -152,14 +152,23 @@
     margin-top: 50px;
     font-size: 3rem !important;
   }
-  header .outer{
+  nav>a, .outer, .pc{
     display: none;
   }
+  header .mo{display: block;}
   header .hbg{
+    width: 100%;
     display: flex;
+    align-items: center;
+  }
+  header .hbg h1{
+    width: 40%;
+    text-align: center;
+  }
+  header .hbg img{
+    width: 40%;
   }
   header nav{
-    align-items: start;
     top: inherit;
     bottom: 0;
   }
