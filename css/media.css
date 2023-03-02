@@ -149,6 +149,7 @@
     font-size: 2rem;
   }
   header .main_vs .main_txt h2{
+    margin-top: 50px;
     font-size: 3rem !important;
   }
   header .outer{
@@ -263,7 +264,7 @@
     bottom: 25% !important;
   }
   .sec04 .main_img{
-    height: 30%;
+    height: 33%;
     justify-content: space-between;
   }
   .sec04 .main_img>div{
