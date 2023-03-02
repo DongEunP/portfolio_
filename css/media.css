@@ -165,7 +165,7 @@
   header .pg_up{
     width: 30px;
     height: 30px;
-    bottom: 7%;
+    bottom: 10%;
     right: 3%;
   }
   header .pg_up i{
@@ -195,13 +195,13 @@
     width: 100%;
   }
   .sec02_wrap .skill_wrap{
-    height: 60%;
+    height: 50%;
   }
   .imoticon>div{
     width: 33%;
   }
   .skill_wrap h2{
-    top: 16%;
+    top: 10%;
   }
   .sec02_wrap .skills{
     align-content: end;
@@ -217,7 +217,7 @@
     font-size: 3vw;
   }
   .sec02 article{
-    height: 40%;
+    height: 50%;
   }
   .sec02 article .history{
     flex-direction: column;
@@ -231,15 +231,10 @@
   }
   .sec03 .sec03_wrap .port_wrap>div{
     width: 90% !important;
+    padding-bottom: 20% !important;
   }
   .hover_txt dl,.sec04 .main_img p{
     font-size: 0.825rem;
-  }
-  .swiper-button-next{
-    right: 3% !important;
-  }
-  .swiper-button-prev{
-    left: 3% !important;
   }
   .sec02 article .history{
     justify-content: start;
@@ -250,7 +245,7 @@
   }
   .sec03 .sec03_wrap .port_wrap>div b{
     font-size: 40vw;
-    top: 20%;
+    top: 15%;
   }
   .sec03_wrap .port_hover .hover_txt dl dt{
     margin: 10px auto 0 auto;
@@ -261,8 +256,11 @@
   .sec03 .hover_txt>dl{
     width: 50%;
   }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 25% !important;
+  }
   .sec04 .main_img{
-    height: 45%;
+    height: 40%;
     justify-content: space-between;
   }
   .sec04 .main_img>div{
@@ -284,24 +282,27 @@
     text-align: center;
   }
   .banner{
-    height: 50%;
-    bottom: 0;
+    height: 60%;
   }
   .banner .banner_wrap{
-    bottom: 0;
+    bottom: 60px;
   }
   .banner img{
     padding: 0;
   }
   .banner h3{
-    font-size: 2.5vw;
+    font-size: 0.825rem;
     top: 5%;
+  }
+  .foot .foot_wrap{
+    padding: 0;
   }
   .foot .foot_img>img{
     width: 30%;
   }
   .foot .foot_wrap .con_box{
-    margin-bottom: 5%;
+    margin-bottom: 70px;
+    height: 60%;
   }
   .foot .txt_sns{
     width: 70%;
@@ -316,10 +317,11 @@
     margin-left: 5%;
   }
   footer .send{
-    font-size: 2vw;
+    font-size: 0.75rem;
   }
   .con_wrap button{
-    height: 20px;
+    height: 30px;
+    margin: 10px 0;
   }
   .foot .sns{
     justify-content: space-center;
@@ -328,7 +330,7 @@
     width: 20%;
   }
   .foot .foot_img{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width:599px) {
