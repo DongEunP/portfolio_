@@ -123,8 +123,32 @@
   }
 }
 @media (max-width:600px) {
+  .container{
+    width: 90%;
+  }
   h2{
     font-size: 5vw !important;
+  }
+  .mv_click{
+    bottom: 10%;
+  }
+  header .main_vs video{
+    object-fit: cover;
+    object-position: 66% ;
+  }
+  header .main_vs .main_txt{
+    width: 100%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+  }
+  header .main_vs .main_txt p{
+    font-size: 2rem;
+  }
+  header .main_vs .main_txt h2{
+    font-size: 3rem !important;
   }
   header .outer{
     display: none;
@@ -135,8 +159,34 @@
   header nav{
     align-items: start;
   }
+  header .pg_up{
+    width: 30px;
+    height: 30px;
+    bottom: 2%;
+    right: 3%;
+  }
+  header .pg_up i{
+    font-size: 5vw;
+    transform: translateY(-50%);
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none !important;
+  }
   .sec01 .profile .tab_wrap{
     width: 100%;
+    height: 40%;
+  }
+  .sec01 .profile .tab_wrap>div{
+    width: 93%;
+  }
+  .sec01 .profile .tab_wrap h3{
+    font-size: 4.125vw;
+  }
+  .sec01 .pro_tab h4{
+    font-size: 3vw;
+  }
+  .sec01 .profile .tab_wrap p{
+    font-size: 12px;
   }
   .sec01 .profile>img{
     width: 100%;
@@ -158,6 +208,7 @@
   }
   .sec02 .skill_num{
     top: -20%;
+    font-size: 3vw;
   }
   .sec02 article{
     height: 40%;
@@ -169,11 +220,14 @@
   .sec02 article .history>div{
     text-align: center;
   }
-  .sec03 .sec03_wrap .port_wrap>div{
-    width: 80% !important;
+  .sec02 article .history li{
+    font-size: 3vw;
   }
-  .hover_txt dl{
-    font-size: 2.125vw;
+  .sec03 .sec03_wrap .port_wrap>div{
+    width: 90% !important;
+  }
+  .hover_txt dl,.sec04 .main_img p{
+    font-size: 0.825rem;
   }
   .swiper-button-next{
     right: 3% !important;
@@ -181,93 +235,16 @@
   .swiper-button-prev{
     left: 3% !important;
   }
+  .sec02 article .history{
+    justify-content: start;
+    padding-top: 20px;
+  }
   .sec03 .sec03_wrap .port_wrap>div h3{
     font-size: 5vw;
   }
   .sec03 .sec03_wrap .port_wrap>div b{
     font-size: 20vw;
     top: 25%;
-  }
-  .sec04 .main_img .etc_hover_txt{
-    height: 70%;
-    justify-content: center;
-    align-items: center;
-  }
-  .sec04 .main_img h3{
-    text-align: center;
-  }
-  .banner h3{
-    font-size: 2.5vw;
-    top: 20%;
-  }
-  .foot .foot_img>img{
-    width: 30%;
-  }
-  .foot .txt_sns p{
-    font-size: 2.125vw;
-  }
-}
-@media (max-width:599px) {
-  header .hbg li{
-    font-size: 10px;
-  }
-  header .main_vs video{
-    object-fit: cover;
-    object-position: 66% ;
-  }
-  header .main_vs .main_txt{
-    width: 100%;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-  }
-  header .main_vs .main_txt p{
-    font-size: 2rem;
-  }
-  header .main_vs .main_txt h2{
-    font-size: 3rem !important;
-  }
-  header .pg_up{
-    width: 30px;
-    height: 30px;
-    bottom: 2%;
-    right: 3%;
-  }
-  header .pg_up i{
-    font-size: 5vw;
-    transform: translateY(-50%);
-  }
-  .container{
-    width: 90%;
-  }
-  .sec01 .profile .tab_wrap{
-    height: 40%;
-  }
-  .sec01 .profile .tab_wrap>div{
-    width: 93%;
-  }
-  .sec01 .profile .tab_wrap h3{
-    font-size: 4.125vw;
-  }
-  .sec01 .pro_tab h4{
-    font-size: 3vw;
-  }
-  .sec01 .profile .tab_wrap p{
-    font-size: 12px;
-  }
-  .swiper-button-next, .swiper-button-prev{
-    display: none !important;
-  }
-  .sec02 .skill_num{
-    font-size: 3vw;
-  }
-  .sec02 article .history li{
-    font-size: 3vw;
-  }
-  .sec03 .sec03_wrap .port_wrap>div{
-    width: 90% !important;
   }
   .sec03_wrap .port_hover .hover_txt dl dt{
     margin: 10px auto 0 auto;
@@ -285,6 +262,14 @@
   .sec04 .main_img .leaflet{
     background-position-x: 5%;
   }
+  .sec04 .main_img .etc_hover_txt{
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec04 .main_img h3{
+    text-align: center;
+  }
   .banner{
     height: 50%;
     bottom: 0;
@@ -296,7 +281,20 @@
     padding: 0;
   }
   .banner h3{
+    font-size: 2.5vw;
     top: 5%;
+  }
+  .foot .foot_img>img{
+    width: 30%;
+  }
+  .foot .txt_sns{
+    width: 70%;
+  }
+  .foot .sns img{
+    width: 70%;
+  }
+  .foot .txt_sns p{
+    font-size: 0.825rem;
   }
   .sec04 h2, .sec03 .sec03_wrap h2{
     margin-left: 5%;
@@ -308,9 +306,38 @@
     height: 20px;
   }
   .foot .sns{
-    justify-content: space-between;
+    justify-content: space-center;
   }
   .foot .sns>a{
     width: 20%;
   }
+  .foot .foot_img{
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:599px) {
+  /* header nav{
+    top: inherit;
+    bottom: 0;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

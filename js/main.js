@@ -541,16 +541,4 @@ $(function(){
 // $('.hbg>div').click(function(){
 //   $('.inner').stop(true).slideToggle("slow")
 // })
-var burger = $('.menu-trigger');
 
-burger.each(function(index){
-  var $this = $(this);
-  
-  $this.on('click', function(e){
-    e.preventDefault();
-    $(this).toggleClass('active-11');
-    timer = setTimeout(function(){
-      $('.inner').stop(true).slideToggle('slow');
-    },1000)
-  })
-});
