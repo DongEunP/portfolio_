@@ -177,7 +177,7 @@
   }
   .sec01 .profile .tab_wrap{
     width: 100%;
-    height: 40%;
+    height: 35%;
   }
   .sec01 .profile .tab_wrap>div{
     width: 93%;
@@ -260,7 +260,7 @@
     bottom: 25% !important;
   }
   .sec04 .main_img{
-    height: 40%;
+    height: 35%;
     justify-content: space-between;
   }
   .sec04 .main_img>div{
@@ -282,7 +282,7 @@
     text-align: center;
   }
   .banner{
-    height: 60%;
+    height: 65%;
   }
   .banner .banner_wrap{
     bottom: 60px;
@@ -301,7 +301,7 @@
     width: 30%;
   }
   .foot .foot_wrap .con_box{
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     height: 60%;
   }
   .foot .txt_sns{
@@ -312,6 +312,9 @@
   }
   .foot .txt_sns p{
     font-size: 0.825rem;
+  }
+  .con_wrap form ul li texarea{
+    height: 10%;
   }
   .sec04 h2, .sec03 .sec03_wrap h2{
     margin-left: 5%;
