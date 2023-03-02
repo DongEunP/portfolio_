@@ -123,11 +123,12 @@
   }
 }
 @media (max-width:600px) {
+  section h2, footer h2{
+    top: 5%;
+    font-size: 9vw;
+  }
   .container{
     width: 90%;
-  }
-  h2{
-    font-size: 5vw !important;
   }
   .mv_click{
     bottom: 10%;
@@ -158,11 +159,13 @@
   }
   header nav{
     align-items: start;
+    top: inherit;
+    bottom: 0;
   }
   header .pg_up{
     width: 30px;
     height: 30px;
-    bottom: 2%;
+    bottom: 7%;
     right: 3%;
   }
   header .pg_up i{
@@ -193,6 +196,9 @@
   }
   .sec02_wrap .skill_wrap{
     height: 60%;
+  }
+  .imoticon>div{
+    width: 33%;
   }
   .skill_wrap h2{
     top: 16%;
@@ -240,21 +246,28 @@
     padding-top: 20px;
   }
   .sec03 .sec03_wrap .port_wrap>div h3{
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .sec03 .sec03_wrap .port_wrap>div b{
-    font-size: 20vw;
-    top: 25%;
+    font-size: 40vw;
+    top: 20%;
   }
   .sec03_wrap .port_hover .hover_txt dl dt{
     margin: 10px auto 0 auto;
   }
+  .sec03 .hover_txt{
+    width: 100%;
+  }
+  .sec03 .hover_txt>dl{
+    width: 50%;
+  }
   .sec04 .main_img{
-    height: 50%;
+    height: 45%;
     justify-content: space-between;
   }
   .sec04 .main_img>div{
     width: 45%;
+    height: 60%;
   }
   .sec04 .main_img .visual{
     background-position-x: 20%;
@@ -286,6 +299,9 @@
   }
   .foot .foot_img>img{
     width: 30%;
+  }
+  .foot .foot_wrap .con_box{
+    margin-bottom: 5%;
   }
   .foot .txt_sns{
     width: 70%;
