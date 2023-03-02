@@ -529,9 +529,6 @@ $(function(){
       601:{
         slidesPerView: 3,
       },
-      360:{
-        slidesPerView: 2,
-      }
     },
   });
 })

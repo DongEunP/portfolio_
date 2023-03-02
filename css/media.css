@@ -207,6 +207,9 @@
   }
 }
 @media (max-width:599px) {
+  header .hbg li{
+    font-size: 0.825rem;
+  }
   header .main_vs video{
     object-fit: cover;
     object-position: 66% ;
@@ -255,6 +258,12 @@
   }
   .swiper-button-next, .swiper-button-prev{
     display: none !important;
+  }
+  .sec02 .skill_num{
+    font-size: 3vw;
+  }
+  .sec02 article .history li{
+    font-size: 3vw;
   }
   .sec03 .sec03_wrap .port_wrap>div{
     width: 90% !important;
