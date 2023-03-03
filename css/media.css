@@ -404,10 +404,6 @@
   .foot .foot_img>img{
     width: 30%;
   }
-  .foot .foot_wrap .con_box{
-    /*margin-bottom: 80px;*/
-    /*height: 60%;*/
-  }
   .foot .txt_sns{
     width: 70%;
   }
@@ -434,7 +430,7 @@
     width: 20%;
   }
   .foot .foot_img{
-    margin-bottom: 5px;
+    padding-bottom: 5%;
   }
   .foot form li:last-child{
     height: 100px !important;
