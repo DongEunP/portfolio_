@@ -541,8 +541,22 @@ $(function(){
 })
 
 
-//hbg 클릭
-// $('.hbg>div').click(function(){
-//   $('.inner').stop(true).slideToggle("slow")
-// })
+// 푸터 메일 팝업
+$('.gform').submit(function(){
+  $('.send_pop_bg').fadeIn()
+})
+
+var burger = $('.send_pop_close>div>div');
+
+burger.each(function(index){
+  var $this = $(this);
+  
+  $this.on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('close');
+    timer = setTimeout(function(){
+      $('.send_pop_bg').fadeOut();
+    },1000)
+  })
+});
 
