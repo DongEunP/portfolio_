@@ -29,7 +29,10 @@
     transform: translateX(-50%);
   }
   .sec04 .main_img{
-    align-items: end;
+    align-items: flex-end;
+    -webkit-box-align: end;
+    -moz-align-items: flex-end;
+    -ms-flex-align: end;
   }
   .banner h3{
     top: 15%;
@@ -179,7 +182,10 @@
   }
   .foot .foot_wrap{
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+    -moz-box-justify-content: flex-end;
+    -ms-flex-pack: end;
     padding-bottom: 3%;
   }
   footer h2{
@@ -298,7 +304,10 @@
     top: 6%;
   }
   .sec02_wrap .skills{
-    align-content: end;
+    align-content: flex-end;
+    -webkit-box-align: end;
+    -moz-align-items: flex-end;
+    -ms-flex-align: end;
     height: 70%;
     position: absolute;
     bottom: 5%;
