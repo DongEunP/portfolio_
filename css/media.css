@@ -1,19 +1,23 @@
 @media (max-width:1280px) {
-  .mv_click{
-    display: flex;
+  header .main_vs .main_txt{
+    top: 80px;
+    left: 200px;
   }
-  .scroll{
-    display: none;
-  }
-  .sec01 .profile{
-    flex-direction: column-reverse;
-    justify-content: center;
+  header .main_vs .main_txt h2{
+    font-size: 6vw;
+    margin-top: 20px;
   }
   .sec01 .profile img{
-    width: 50%;
+    width: 40%;
   }
-  .sec01 .profile .tab_wrap{
-    height: 30%;
+  .swiper-button-next{
+    right: 21% !important;
+  }
+  .swiper-button-prev{
+    left: 21% !important;
+  }
+  .sec03 .sec03_wrap .port_wrap>div b{
+    top: 10%;
   }
   .etc_hover{
     position: relative;
@@ -28,21 +32,110 @@
     align-items: end;
   }
   .banner h3{
-    top: 30%;
+    top: 15%;
+    font-size: 2vw;
+  }
+  .foot .foot_wrap .con_box .con_wrap li:last-child{
+    height: 150px;
+  }
+  .foot .send{
+    font-size: 1.125vw;
   }
 }
-@media (max-width:1147px) {
+@media (max-width:1024px) {
+  header .main_vs .main_txt{
+    top: 50px;
+    left: 150px;
+  }
   .foot .foot_wrap .con_box .con_wrap ul input{
     width: 100%;
   }
+  .foot .foot_wrap .con_box{
+    height: 75%;
+  }
+  .foot .foot_wrap .con_box .con_wrap li:last-child{
+    height: 120px;
+  }
+  .con_wrap button{
+    height: 35px;
+  }
 }
 @media (max-width:860px) {
+  header .main_vs video{
+    object-fit: cover;
+    object-position: 70% ;
+  }
+  header .main_vs .main_txt{
+    width: 100%;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+  }
+  header .main_vs .main_txt p{
+    font-size: 1.865rem;
+  }
+  header .main_vs .main_txt h2{
+    margin-top: 50px;
+    font-size: 3.5rem !important;
+  }
+  body h2{
+    font-size: 5vw;
+  }
   header nav ul{
     width: 70%;
   }
+  nav>a, .outer, .pc{
+    display: none !important;
+  }
+  header .mo{display: block;}
+  header .hbg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  header .hbg h1{
+    width: 20%;
+    text-align: center;
+  }
+  header .hbg img{
+    width: 40%;
+  }
+  header nav{
+    top: inherit;
+    bottom: 0;
+  }
+  header .pg_up{
+    width: 30px;
+    height: 30px;
+    bottom: 10%;
+    right: 3%;
+  }
   header .pg_up i{
-    font-size: 3.5vw;
-    transform: translateY(20%)
+    font-size: 2.625vw;
+    transform: translateY(-35%);
+  }
+  header .scroll{
+    display: none;
+  }
+  header .mv_click{
+    display: flex;
+    bottom: 10%;
+  }
+  .sec01 .profile{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .sec01 .profile>img{
+    width: 70%;
+  }
+  .sec01 .profile .tab_wrap{
+    width: 100%;
+    height: 30%;
+  }
+  .sec01 .profile .tab_wrap p{
+    font-size: 1.625vw;
   }
   .sec02_wrap .skills{
     flex-wrap: wrap;
@@ -60,6 +153,12 @@
     width: 80px;
     height: 30px;
     line-height: 30px;
+  }
+  .banner h3{
+    top: 25%;
+  }
+  .banner .banner_wrap{
+    bottom: 13%;
   }
   .swiper-button-next{
     right: 18% !important;
@@ -106,9 +205,12 @@
   }
   .foot .foot_wrap .con_box{
     width: 100%;
-    height: 65%;
+    height: 55%;
+    margin-bottom: 80px;
   }
-
+  .foot .send{
+    font-size: 1.8vw;
+  }
   .foot .txt_sns p{
     font-size: 1.8vw;
   }
@@ -131,25 +233,18 @@
     width: 90%;
   }
   .mv_click{
-    bottom: 10%;
+
   }
   header .main_vs video{
-    object-fit: cover;
     object-position: 66% ;
   }
   header .main_vs .main_txt{
-    width: 100%;
     top: 12%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
   }
   header .main_vs .main_txt p{
     font-size: 2rem;
   }
   header .main_vs .main_txt h2{
-    margin-top: 50px;
     font-size: 3rem !important;
   }
   nav>a, .outer, .pc{
@@ -161,26 +256,12 @@
     display: flex;
     align-items: center;
   }
-  header .hbg h1{
-    width: 40%;
-    text-align: center;
+  header .pg_up i{
+    font-size: 4.5vw;
+    transform: translateY(-40%);
   }
   header .hbg img{
-    width: 40%;
-  }
-  header nav{
-    top: inherit;
-    bottom: 0;
-  }
-  header .pg_up{
-    width: 30px;
-    height: 30px;
-    bottom: 10%;
-    right: 3%;
-  }
-  header .pg_up i{
-    font-size: 5vw;
-    transform: translateY(-50%);
+    width: 60%;
   }
   .swiper-button-next, .swiper-button-prev{
     display: none !important;
@@ -314,7 +395,7 @@
     width: 30%;
   }
   .foot .foot_wrap .con_box{
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     height: 60%;
   }
   .foot .txt_sns{
@@ -324,16 +405,13 @@
     width: 70%;
   }
   .foot .txt_sns p{
-    font-size: 0.825rem;
-  }
-  .con_wrap form ul li texarea{
-    height: 10%;
+    font-size: 3vw;
   }
   .sec04 h2, .sec03 .sec03_wrap h2{
     margin-left: 5%;
   }
   footer .send{
-    font-size: 0.75rem;
+    font-size: 2.5vw;
   }
   .con_wrap button{
     height: 30px;
@@ -348,30 +426,7 @@
   .foot .foot_img{
     margin-bottom: 5px;
   }
-}
-@media (max-width:599px) {
-  /* header nav{
-    top: inherit;
-    bottom: 0;
-  } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .foot form li:last-child{
+    height: 100px;
+  }
 }

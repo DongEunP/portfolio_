@@ -41,11 +41,12 @@
 header{
   height: 100vh;
 }
-header>a h1{
+nav>a h1{
   width: 100px;
   height: 60px;
   text-align: center;
   line-height: 60px;
+  margin-left: 20px;
 }
 header nav{
   width: 100%;
