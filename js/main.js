@@ -1,13 +1,5 @@
 
-// 인트로
-$(document).on('click', '.intro_img', function(){
-  var timer;
-  $('.intro_img').fadeOut();
-  $('.load_wrap').css('opacity',(1));
-  timer = setTimeout(function(){
-    location.href = 'main.html';
-  },3000);
-});
+
 
 // 메인비쥬얼 타이핑
 let $text = document.querySelector(".main_txt h2");

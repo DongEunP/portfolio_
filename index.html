@@ -35,7 +35,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/intro.css">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
 </head>
 <body>
   <div class="intro_bg">
@@ -61,6 +60,17 @@
       </ul>
     </div>
   </div>
-  <img src="img/og_img.png" alt="" style="display: none;">
+
+  <script>
+    // 인트로
+    $(document).on('click', '.intro_img', function(){
+      var timer;
+      $('.intro_img').fadeOut();
+      $('.load_wrap').css('opacity',(1));
+      timer = setTimeout(function(){
+        location.href = 'main.html';
+      },3000);
+    });
+  </script>
 </body>
 </html>
