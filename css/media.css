@@ -200,6 +200,7 @@
     height: fit-content !important;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 5%;
   }
   .foot .foot_img>img{
     width: 30%;
@@ -428,9 +429,6 @@
   }
   .foot .sns>a{
     width: 20%;
-  }
-  .foot .foot_img{
-    padding-bottom: 5%;
   }
   .foot form li:last-child{
     height: 100px !important;
