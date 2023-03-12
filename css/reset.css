@@ -30,9 +30,6 @@ html,body{
 }
 html{
   overflow-y: hidden;
-  touch-action: none;
-  -webkit-overflow-scrolling: none;
-  overscroll-behavior: none;
 }
 img,video{
   vertical-align: top;

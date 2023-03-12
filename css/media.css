@@ -46,6 +46,11 @@
   }
 }
 @media (max-width:1024px) {
+  html{
+    touch-action: none;
+    -webkit-overflow-scrolling: none;
+    overscroll-behavior: none;
+  }
   header .main_vs .main_txt{
     top: 50px;
     left: 150px;
