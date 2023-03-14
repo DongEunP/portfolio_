@@ -369,6 +369,19 @@ $win.scroll(function(){
     sec04h2.css('opacity','0')
   };
 
+  // sec05
+  let sec05 = $('.sec05').offset().top;
+  let sec05h2 = $('.sec05 h2')
+
+  if ($win.scrollTop() >= sec05 ) {
+    // 스킬 대제목
+    sec05h2.css('animation','sec01 1s')
+    sec05h2.css('opacity','1')
+  }else{
+    sec05h2.css('animation','none')
+    sec05h2.css('opacity','0')
+  };
+
   // footer
   let footer = $('footer').offset().top;
   let footerH2 = $('footer h2')
@@ -450,8 +463,12 @@ $('.menu04').click(function(){
   $('html').animate({scrollTop:section04},500)
 })
 $('.menu05').click(function(){
-  var section04 = $('footer').offset().top;
-  $('html').animate({scrollTop:section04},500)
+  var section05 = $('.sec05').offset().top;
+  $('html').animate({scrollTop:section05},500)
+})
+$('.menu06').click(function(){
+  var section06 = $('footer').offset().top;
+  $('html').animate({scrollTop:section06},500)
 })
 $('.pg_up').click(function(){
   var header = $('header').offset().top;
@@ -532,6 +549,38 @@ $(function(){
   });
 })
 
+// sec05 클릭
+var view = $('.sec05_full>div')
+$('.sec05_list>img:nth-child(1)').click(function(){
+  view.css({"background":"url(img/sec04_illu01.jpg)"}); 
+})
+$('.sec05_list>img:nth-child(2)').click(function(){
+  view.css({"background":"url(img/sec04_illu02.jpg)"});
+})
+$('.sec05_list>img:nth-child(3)').click(function(){
+  view.css({"background":"url(img/sec04_illu03.jpg)"});
+})
+$('.sec05_list>img:nth-child(4)').click(function(){
+  view.css({"background":"url(img/sec04_illu04.jpg)"});
+})
+$('.sec05_list>img:nth-child(5)').click(function(){
+  view.css({"background":"url(img/sec04_illu05.jpg)"});
+})
+$('.sec05_list>img:nth-child(6)').click(function(){
+  view.css({"background":"url(img/sec04_illu06.jpg)"});
+})
+$('.sec05_list>img:nth-child(7)').click(function(){
+  view.css({"background":"url(img/sec04_illu07.jpg)"});
+})
+$('.sec05_list>img:nth-child(8)').click(function(){
+  view.css({"background":"url(img/sec04_illu08.jpg)"});
+})
+$('.sec05_list>img:nth-child(9)').click(function(){
+  view.css({"background":"url(img/sec04_illu09.jpg)"});
+})
+$('.sec05_list>img:nth-child(10)').click(function(){
+  view.css({"background":"url(img/sec04_illu10.jpg)"});
+})
 
 // 푸터 메일 팝업
 $('.gform').submit(function(){

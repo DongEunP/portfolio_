@@ -63,7 +63,7 @@ header nav{
   transition: 0.5s;
 }
 header nav ul{
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
@@ -604,7 +604,7 @@ section h2{
   -moz-box-justify-content: flex-end;
   -ms-flex-pack: end;
 }
-.sec04 h2{
+.sec04 h2, .sec05 h2{
   margin-left: 10%;
 }
 .sec04 .main_img{
@@ -761,6 +761,43 @@ section h2{
 }
 .inner_wrap .main_art_img .article_img img{
   width: 30%;
+}
+
+/* sec05 */
+.sec05{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.sec05_wrap{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sec05_wrap>div{
+ width: 50%;
+}
+.sec05_wrap .sec05_full{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec05_wrap .sec05_full>div{
+  width: 70%;
+  height: 80%;
+  background-image: url(../img/sec04_illu01.jpg);
+  background-size: cover !important;
+}
+.sec05_wrap .sec05_list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+.sec05_wrap .sec05_list img{
+  width: 20%;
+  margin: 10px;
+  cursor: pointer;
 }
 
 /* footer */
